@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function(){
         yrvalue = 2412;
     }
      var ID = 'S' + fname.substring(0,3) + lname.substring(0,2) + yrvalue;
-    alert(`SCHOOL ID: ${ID}`.toLocaleUpperCase());
+    alert(`SCHOOL ID: ${ID}`.toUpperCase());
     //alert(`the sem is ${sem}`);
    }
 })
