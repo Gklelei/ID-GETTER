@@ -30,8 +30,12 @@ document.addEventListener('DOMContentLoaded', function(){
     else if(year == 2023 && sem == 'SECOND') {
         yrvalue = 2412;
     }
+    if (year<2020 || year>2023){
+        alert("Select a year between 2020 and 2023");
+        return false;
+    }
      var ID = 'S' + fname.substring(0,3) + lname.substring(0,2) + yrvalue;
-    alert(`SCHOOL ID: ${ID}`.toUpperCase());
+       alert(`SCHOOL ID: ${ID}`.toUpperCase());
     //alert(`the sem is ${sem}`);
    }
 })
